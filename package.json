@@ -1,0 +1,43 @@
+{
+  "name": "tippynotes",
+  "private": true,
+  "version": "4.1.1",
+  "description": "tippy toes on the net.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "mocha -r dotenv/config",
+    "browserify:crypto": "./node_modules/browserify/bin/cmd.js -s hush -e src/lib/crypto.js -o src/public/crypto.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshterrill/hushnote.git"
+  },
+  "keywords": [
+    "crypto",
+    "encryption",
+    "rest",
+    "one-time-use"
+  ],
+  "author": "Josh Terrill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshterrill/hushnote/issues"
+  },
+  "homepage": "https://github.com/joshterrill/hushnote#readme",
+  "dependencies": {
+    "dotenv": "^8.6.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "mongodb": "^3.7.3",
+    "node-schedule": "^2.1.0",
+    "react-responsive": "^9.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.18"
+  }
+}
