@@ -50,6 +50,7 @@ input {
     white-space: -o-pre-wrap;
     word-wrap: break-word;
     word-break: normal !important;
+    color: black;
 }
 footer {
     position: fixed;
