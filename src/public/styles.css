@@ -1,69 +1,26 @@
 ﻿* {
-    box-sizing: border-box;
+  background-color: #252525;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 
-.container {
-    width: 95%;
-    max-width: 1200px; /* adjust this value as per your design */
-    margin: 0 auto;
+body {
+  background-color: #252525;
 }
 
-/* Define styles for small screens */
-@media screen and (max-width: 768px) {
-    .container {
-      width: 100%;
-      padding: 0 10px;
-    }
-  }
-  
-  /* Use relative units for font sizes */
-  body {
-    font-size: 40px;
-  }
-  
-  h1 {
-    font-size: 1.5em;
-  }
-  
-  p {
-    font-size: 1em;
-  }
+select {
+  border: solid 1px;
+  border-radius: 5px;
+  height: 28px;
+}
 
-  .btn-primary {
-    font-size: 40px;
-  }
-
-  .btn-secondary {
-    font-size: 40px;
-  }
-
-  .form-control {
-    max-height: 350px;
-    max-width: 1176px;
-    font-size: 40px;
-  }
-
-  .btn-danger {
-    font-size: 45px;
-  }
-
-  input[type="radio"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid #999;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  input[type="radio"]:checked {
-    background-color: #999;
-    border-color: #999;
-  }
+input {
+  border: solid 1px;
+  border-radius: 5px;
+}
 
 .note-text-container {
     background: #efefef;
@@ -92,7 +49,7 @@ small.tagline {
 }
 .header a {
     text-decoration: none;
-    color: #0b0b0b;
+    color: #ffffff;
 }
 .delete-stale-messages {
     color: gray;
@@ -112,4 +69,8 @@ small.tagline {
 .note-copy-header {
     float: right;
     text-align: right;
+}
+
+#text {
+  color: white;
 }

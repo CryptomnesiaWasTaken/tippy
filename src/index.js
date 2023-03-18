@@ -23,7 +23,7 @@ app.set('views', `${__dirname}/views`);
 async function createScheduler(db) {
     scheduler.scheduleJob('0 2 * * *', async () => {
         try {
-            await db.collection('tippys').deleteMany({timestamp: {$lt: getDaysPastDate(+process.env.DELETE_STALE_MESSAGES_DAYS)}})
+            await db.collection('notes').deleteMany({timestamp: {$lt: getDaysPastDate(+process.env.DELETE_STALE_MESSAGES_DAYS)}})
         } catch (error) {
             console.error('Unable to fetch notes for automated scheduler', error);
         }

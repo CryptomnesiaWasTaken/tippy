@@ -1,11 +1,11 @@
-<textarea autofocus aria-label="" placeholder="" class="form-control" id="note"
-    rows="14"></textarea>
+<textarea autofocus aria-label="Type message here" placeholder="Type message here" class="form-control" id="note"
+    rows="5"></textarea>
 <div class="mt-2 mb-2">
     <input type="radio" name="message-type" value="onread" checked onchange="change(event)" aria-checked="true"
-        aria-label="Destroy message after being read" /> Destroy message after being read <br />
-    <input id="ttl" type="radio" name="message-type" value="aftertime" onchange="change(event)" /> Destroy message after
-    <input class="time-input" id="ttl-number" type="number" style="width: 100px" min="0" disabled />
-    <select class="time-input" id="ttl-unit" disabled aria-label="Destroy message after minutes, hours, days">
+        aria-label="Destroy after being read" /> Destroy after being read <br />
+    <input id="ttl" type="radio" name="message-type" value="aftertime" onchange="change(event)" style="color:aliceblue;"/> Destroy after
+    <input class="time-input" id="ttl-number" type="number" style="width: 40px" min="0" disabled />
+    <select class="time-input" id="ttl-unit" disabled aria-label="Destroy after minutes, hours, days">
         <option value="null">Select One</option>
         <option value="60">Minutes</option>
         <option value="3600">Hours</option>
@@ -23,11 +23,11 @@
 <div id="results" style="margin-top:10px;text-align:center;display:none;">
     <div class="input-group mb-3">
         <div class="input-group-prepend">
-            
+            <span class="input-group-text">URL:</span>
         </div>
         <input type="text" class="form-control" id="url" aria-label="Generated link to share" />
         <div class="input-group-append">
-            <span class="input-group-text" onclick="copyUrl()" id="copy" style="cursor:pointer; height: 74px; font-size: 30px;">Copy</span>
+            <span class="input-group-text" onclick="copyUrl()" id="copy" style="cursor:pointer;">Copy</span>
         </div>
     </div>
 </div>
