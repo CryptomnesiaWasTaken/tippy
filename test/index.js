@@ -1,7 +1,7 @@
-const {  expect } = require('chai');
+const { expect } = require('chai');
 const crypto = require('../src/lib/crypto');
 
-describe('hushnote tests', () => {
+describe('tippynotes tests', () => {
     it('should return a unique iv and secretKey', () => {
         const { iv, securityKey } = crypto.generateIVAndSecurityKey();
         expect(iv).to.not.be.null;
