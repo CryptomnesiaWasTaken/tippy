@@ -1,78 +1,4 @@
-* {
-  background-color: #252525;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 35%;
-  }
-
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  h1 {
-    margin-bottom: 20px;
-  }
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-*:focus {
-  outline: none;
-}
-
-body {
-  background-color: #252525;
-  /*overflow: hidden;*/
-}
-
-.container {
-  background-color: #252525;
-}
-
-select {
-  border: solid 1px;
-  border-radius: 5px;
-  height: 28px;
-}
-
-input {
-  border: solid 1px;
-  border-radius: 5px;
-}
-
-#infotext {
-  margin: 15px;
-  font-size: 40px;
-  text-align: center;
-}
-
-#desctext {
-  font-size: 50%;
-  letter-spacing: normal;
-  line-height: 10px;
-}
-
-.note-text-container {
+﻿.note-text-container {
     background: #efefef;
     padding: 10px;
     border-radius: 4px;
@@ -84,7 +10,6 @@ input {
     white-space: -o-pre-wrap;
     word-wrap: break-word;
     word-break: normal !important;
-    color: black;
 }
 footer {
     position: fixed;
@@ -100,13 +25,8 @@ small.tagline {
 }
 .header a {
     text-decoration: none;
-    color: #ffffff;
+    color: #0b0b0b;
 }
-
-h1 {
-  margin-top: 10px;
-}
-
 .delete-stale-messages {
     color: gray;
     text-align: center;
@@ -125,8 +45,4 @@ h1 {
 .note-copy-header {
     float: right;
     text-align: right;
-}
-
-#text {
-  color: white;
 }

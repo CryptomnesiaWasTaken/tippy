@@ -1,11 +1,11 @@
 <textarea autofocus aria-label="Type message here" placeholder="Type message here" class="form-control" id="note"
-    rows="5"></textarea>
+    rows="14"></textarea>
 <div class="mt-2 mb-2">
     <input type="radio" name="message-type" value="onread" checked onchange="change(event)" aria-checked="true"
-        aria-label="Destroy after being read" /> Destroy after being read <br />
-    <input id="ttl" type="radio" name="message-type" value="aftertime" onchange="change(event)" style="color:aliceblue;"/> Destroy after
+        aria-label="Destroy message after being read" /> Destroy message after being read <br />
+    <input id="ttl" type="radio" name="message-type" value="aftertime" onchange="change(event)" /> Destroy message after
     <input class="time-input" id="ttl-number" type="number" style="width: 40px" min="0" disabled />
-    <select class="time-input" id="ttl-unit" disabled aria-label="Destroy after minutes, hours, days">
+    <select class="time-input" id="ttl-unit" disabled aria-label="Destroy message after minutes, hours, days">
         <option value="null">Select One</option>
         <option value="60">Minutes</option>
         <option value="3600">Hours</option>
@@ -32,22 +32,8 @@
     </div>
 </div>
 
-<!--<p id="infotext">Info <br><span id="desctext">TippyNotes is a simple web application which allows you to make notes with military-grade encryption that get destroyed after being read or after a specific time that you can set.</span></br></p>-->
 
 <script>
-    const textarea = document.getElementById('note');
-
-    function setRows() {
-    if (window.innerWidth < 768) {
-        textarea.setAttribute('rows', '5');
-    } else {
-        textarea.setAttribute('rows', '12');
-    }
-    }
-
-    setRows();
-    window.addEventListener('resize', setRows);
-
     async function submit() {
         if (document.getElementById('ttl').checked && (document.getElementById('ttl-unit').value === 'null' || document.getElementById('ttl-number').value === '')) {
             alert('You must enter a time and unit');

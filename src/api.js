@@ -53,7 +53,7 @@ module.exports = (db) => {
       
     } catch (error) {
       console.error(error);
-      res.json({note: null, error: 'Could not find note.'});
+      res.json({note: null, error: 'Could not find note, perhaps it has already been destroyed?'});
     }
     
   });
@@ -75,7 +75,7 @@ module.exports = (db) => {
     try {
       const encryptedNote = await db.collection('notes').findOne({securityKey});
       if (!encryptedNote) {
-        res.render('read', {note: null, error: 'Could not find note.'});
+        res.render('read', {note: null, error: 'Could not find note, perhaps it has already been destroyed?'});
       } else {
         if (encryptedNote.ttl == 0) { // non-timed ttl
           try {
@@ -116,7 +116,7 @@ module.exports = (db) => {
     try {
       const encryptedNote = await db.collection('notes').findOne({securityKey});
       if (!encryptedNote) {
-        res.render('read', {note: null, error: 'Could not find note.'});
+        res.render('read', {note: null, error: 'Could not find note, perhaps it has already been destroyed?'});
       } else {
         try {
           const ascii = crypto.isASCII(securityKey + iv);
