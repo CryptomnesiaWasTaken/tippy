@@ -1,4 +1,4 @@
-﻿* {
+* {
   background-color: #252525;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -27,6 +27,11 @@ body {
   background-color: #252525;
 }
 
+.container {
+  background-color: #252525;
+  height: 900px;
+}
+
 select {
   border: solid 1px;
   border-radius: 5px;
@@ -36,6 +41,18 @@ select {
 input {
   border: solid 1px;
   border-radius: 5px;
+}
+
+#infotext {
+  margin: 15px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#desctext {
+  font-size: 50%;
+  letter-spacing: normal;
+  line-height: 10px;
 }
 
 .note-text-container {
