@@ -14,6 +14,23 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 35%;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+}
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
@@ -25,11 +42,11 @@ input[type=number] {
 
 body {
   background-color: #252525;
+  /*overflow: hidden;*/
 }
 
 .container {
   background-color: #252525;
-  height: 900px;
 }
 
 select {
@@ -85,6 +102,11 @@ small.tagline {
     text-decoration: none;
     color: #ffffff;
 }
+
+h1 {
+  margin-top: 10px;
+}
+
 .delete-stale-messages {
     color: gray;
     text-align: center;
